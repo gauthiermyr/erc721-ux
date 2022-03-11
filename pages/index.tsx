@@ -1,9 +1,5 @@
 import { useWeb3React } from '@web3-react/core'
 import { InjectedConnector } from '@web3-react/injected-connector';
-import useSWR from 'swr'
-import Person from '../components/Person'
-
-const fetcher = (url) => fetch(url).then((res) => res.json())
 
 export default function Index() {
 
