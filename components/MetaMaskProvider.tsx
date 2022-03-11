@@ -31,7 +31,7 @@ function MetamaskProvider({ children }) {
 				setLoaded(true);
 			})
 	}, [activateNetwork, networkActive, networkError])
-	console.log(chainId)
+
 	if (loaded && chainId === 4) {
 		return children
 	}
