@@ -19,12 +19,30 @@ export default function fakeBayc() {
             setCollection({name, supply: supply.toString()})
         }
     }
+
+    const mint = async () => {
+        try{
+            if(account) {
+                const signer = await library.getSigner();
+                const contract = new Contract(address, ABI, signer);
+               
+                await (await contract.claimAToken()).wait();
+                alert('Success')
+                getData();
+            }
+        }
+        catch(err){}
+    }
+
     useEffect(() => {
         getData();
     }, [account]);
 
     if(! collection) return <>Loading</>
     return (
+        <>
         <div>{collection.name}: {collection.supply} tokens</div>
+        <button onClick={mint}>Mint</button>
+        </>
     );
 }

@@ -9,7 +9,7 @@ function MetamaskProvider({ children }) {
 
 	const switchNetwork = async () => {
 		try {
-			await library?.currentProvider.request({
+			await library?.provider.request({
 			  method: "wallet_switchEthereumChain",
 			  params: [{ chainId: "0x4" }]
 			});

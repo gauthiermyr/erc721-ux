@@ -5,11 +5,7 @@ import { Web3Provider } from "@ethersproject/providers";
 
 
 function getLibrary(provider) {
-  return new Web3Provider(provider);
-//   return {
-// 	  ...new Web3Provider(provider),
-// 	  web3: new Web3(provider)
-// 	} 
+	return new Web3Provider(provider);
 }
 
 
