@@ -2364,6 +2364,11 @@
     "string_decoder" "^1.1.1"
     "util-deprecate" "^1.0.1"
 
+"redaxios@^0.4.1":
+  "integrity" "sha512-+Jhh1j8/H0KBro+Hih/MrDEJ1PICaU10JA6iu5b3+uvgRI+5n2M7qpMNXq7eC/0fspP0tTq49ONXlGWFdRoNLg=="
+  "resolved" "https://registry.npmjs.org/redaxios/-/redaxios-0.4.1.tgz"
+  "version" "0.4.1"
+
 "request@^2.79.0":
   "integrity" "sha512-MsvtOrfG9ZcrOwAW+Qi+F6HbD0CWXEh9ou77uOb7FM2WPhwT7smM833PzanhJLsgXjN89Ir6V2PczXNnMpwKhw=="
   "resolved" "https://registry.npmjs.org/request/-/request-2.88.2.tgz"
