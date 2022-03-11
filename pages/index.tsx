@@ -8,9 +8,7 @@ export default function Index() {
 	if(!active) {
 		return (
 			<button onClick={() => {
-				activate(new InjectedConnector({
-					supportedChainIds: [4],
-				}))
+				activate(new InjectedConnector({}))
 			}}>
 				Connect
 			</button>
